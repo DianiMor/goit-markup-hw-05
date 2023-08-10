@@ -26,11 +26,10 @@ ul {
   padding-bottom: 30px;
 }
 
-.contenedor {
+/* .contenedor {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1600px;
-}
+} */
 
 .container-nav {
   display: flex;
@@ -45,6 +44,7 @@ ul {
   gap: 30px;
   align-items: center;
   position: relative;
+  box-shadow: none;
 }
 
 .container-header-hijo2 {
@@ -53,6 +53,7 @@ ul {
   gap: 30px;
   align-items: center;
   justify-content: flex-end;
+  box-shadow: none;
 }
 
 .txtWebstudio {
@@ -78,26 +79,12 @@ ul {
   text-decoration: none;
   position: relative;
   padding-bottom: 30px;
+  box-shadow: none;
 }
-
-/* .textoder{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.41px;
-    text-align: right;
-    letter-spacing: 0.03em;
-    color: #212121;
-    text-decoration: none;
-    
-}
-
-.textoder:hover{
-    color: #2196F3;
-} */
 
 .txtsuperior:hover {
   color: #2196f3;
+  box-shadow: none;
 }
 
 .txtsuperior:hover::after {
@@ -109,15 +96,16 @@ ul {
   bottom: 0px;
   content: " ";
   padding: 0;
+  box-shadow: none;
 }
 
-.txtsuperior::after {
-}
 .txttel:hover {
   color: #2196f3;
 }
 
 .hero {
+  margin: auto;
+  width: 1200px;
   height: 600px;
   left: -4px;
   top: 80px;
@@ -214,6 +202,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .txtaquenos-container-dedicamos-hijo1 {
@@ -222,7 +211,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 94px;
+  padding-top: 50px;
   padding-bottom: 55px;
 }
 
@@ -378,10 +367,12 @@ button:hover {
   text-decoration: none;
   color: #ffffff;
   padding: 1px;
-  width: auto;
+  width: 1200px;
+  margin: auto;
 }
 
 .container-footer {
+  width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -503,10 +494,6 @@ button:hover {
   background: #ffffff;
 }
 
-.container li:is(:hover, :focus) {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .container h3 {
   font-weight: 700;
   font-size: 16px;
@@ -598,6 +585,7 @@ button:hover {
 
 .txtsuperior:hover .icon-header {
   fill: #2196f3;
+  box-shadow: none;
 }
 
 .icon-telfono-inteligente:hover {
@@ -607,6 +595,7 @@ button:hover {
 .clientes-regulares {
   padding-bottom: 60px;
   padding-top: 10px;
+  gap: 10px;
 }
 
 .lista-logos {
@@ -682,11 +671,11 @@ button:hover {
 
 .lista-logos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
-  padding-left: 80px;
-  padding-right: 80px;
+  gap: 20px;
+  padding: 0;
 }
 
 .modal {
@@ -710,19 +699,29 @@ button:hover {
   border-radius: 50%;
   background-color: #ffffff;
   border-color: #0000001a;
-  width: 30px;
-  height: 30px;
-  fill: #212121;
+  padding: 0;
 }
 
-.icon-close {
+/* .icon-close {
   width: 11px;
   height: 11px;
   fill: #212121;
-}
+} */
 
 .img-close {
-  fill: #212121;
+  position: relative;
+  background-color: white;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #212121;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .modal--show {
@@ -741,6 +740,7 @@ button:hover {
   transition: opacity 300ms ease, visibility 300ms ease;
   justify-content: center;
   align-items: center;
+  pointer-events: auto;
 }
 
 .backdrop.is-hidden {
